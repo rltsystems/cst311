@@ -35,6 +35,7 @@ for i in range(1,11):
         print("Mesg rcvd: " + rsentence.decode())
         elapsed = round((end - start)*1000, 11)
         print("PONG " + str(i) + " RTT: " + str(elapsed) + "ms\n")
+        avgRTT +=elapsed
         if (i != 1):
             estRTT = (0.875 * estRTT_prev) + (0.125 * elapsed)
             devRTT = (0.75 * devRTT_prev) + (0.25 * abs(elapsed - estRTT))
@@ -50,3 +51,14 @@ for i in range(1,11):
         print("No Mesg rcvd ")
         print("PONG " + str(i) + " Request Timed out\n")
         packetsLost += 1.0
+
+# perform calculation for avg RTT divide by num of pings (10)
+avgRTT = avgRTT/(10-packetsLost)
+
+print("Min RTT: " + str(minRTT) + "ms")
+print("Max RTT: " + str(maxRTT) + "ms")
+print("Avg RTT: " + str(avgRTT) + "ms")
+print("Packet Loss: " + str(packetsLost))
+print("Estimated RTT: " + str(estRTT) + "ms")
+print("Dev RTT: " + str(devRTT) + "ms")
+print("Timeout Interval: " + str(tOut) + "ms")

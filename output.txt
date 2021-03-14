@@ -1,0 +1,48 @@
+()
+Mesg sent: Ping1
+Mesg rcvd: PING1
+PONG 1 RTT: 4.49514389038ms
+
+Mesg sent: Ping2
+No Mesg rcvd 
+PONG 2 Request Timed out
+
+Mesg sent: Ping3
+No Mesg rcvd 
+PONG 3 Request Timed out
+
+Mesg sent: Ping4
+No Mesg rcvd 
+PONG 4 Request Timed out
+
+Mesg sent: Ping5
+Mesg rcvd: PING5
+PONG 5 RTT: 2.96497344971ms
+
+Mesg sent: Ping6
+Mesg rcvd: PING6
+PONG 6 RTT: 2.01511383057ms
+
+Mesg sent: Ping7
+Mesg rcvd: PING7
+PONG 7 RTT: 2.34889984131ms
+
+Mesg sent: Ping8
+No Mesg rcvd 
+PONG 8 Request Timed out
+
+Mesg sent: Ping9
+No Mesg rcvd 
+PONG 9 Request Timed out
+
+Mesg sent: Ping10
+Mesg rcvd: PING10
+PONG 10 RTT: 3.43418121338ms
+
+Min RTT:	  2.01511383057 ms
+Max RTT:	  4.49514389038 ms
+Avg RTT:	  3.05166244507 ms
+Packet Loss:	  50.0
+Estimated RTT:	  3.76229465473 ms
+Dev RTT:	  1.48981108214 ms
+Timeout Intervals:9.72153898329 ms
